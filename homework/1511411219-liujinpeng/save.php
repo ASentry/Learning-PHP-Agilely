@@ -5,7 +5,7 @@
 </head>
 <?php
 header("Content-type:text/html;charset=utf-8");
-$str = $_POST['title'] . ", " . $_POST['content'] . "\n";
+$str = $_POST['name'] . "," . $_POST['e-mail'] . "," . $_POST['title'] . ", " . $_POST['content'] . "\n";
 $fh = fopen('./file.txt', 'a');
 fwrite($fh, $str);
 fclose($fh);
